@@ -70,20 +70,10 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                       child: Container(
                         width: size,
                         height: size,
-                        child: Transform.rotate(
-                          angle: 45 / 360 * pi * 2, //45 degree in radius
-                          child: Material(
-                            borderRadius: BorderRadius.circular(size / 3),
-                            color: Colors.pinkAccent,
-                            child: Transform.rotate(
-                              angle: _angle,
-                              child: Icon(
-                                Icons.clear,
-                                size: size,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
+                        child: Icon(
+                          Icons.favorite,
+                          size: size,
+                          color: Colors.red,
                         ),
                       ),
                     ),
